@@ -45,6 +45,7 @@ ul, ol, dl, figure,
 img {
     max-width: 100%;
     vertical-align: middle;
+    border: 0;
 }
 
 
@@ -156,6 +157,7 @@ pre {
  * Wrapper
  */
 .wrapper {
+    max-width: #{$content-width};
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
     margin-right: auto;

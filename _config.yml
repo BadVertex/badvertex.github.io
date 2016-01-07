@@ -9,15 +9,22 @@
 title: nexcius.github.io
 email: contact@nexcius.net
 description: > 
-  Share all the code! 
+  Share all the code!<br /> 
   Game Development, Programming and Technology
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://nexcius.net" # the base hostname & protocol for your site
 twitter_username: nexcius
 github_username:  nexcius
+owner: Håvard Kindem
 
 # Build settings
 markdown: kramdown
 
 encoding: utf-8
 highlighter: rouge
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+excerpt_separator: <!--more-->
