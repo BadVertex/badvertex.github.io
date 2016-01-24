@@ -22,7 +22,11 @@ permalink: /resume/
 </tr>
 <tr>
 <td width="80"><strong>Experience</strong></td>
-<td width="494"><strong>Concept Developer</strong>, Norsk Tipping (2014-Present)<br />
+<td width="494">
+<strong>Software Engineer</strong>, Schibsted (2015-Present)<br />
+Building services and infrastructure to personalize services for over 250 million users worldwide.<br />
+
+<strong>Concept Developer</strong>, Norsk Tipping (2014-2015)<br />
 Project lead on services for the renewal of the largest brand with annual revenue of about €400 million. Renewal resulted in a 27% increase in revenue.<br />
 
 <strong>IT-Consultant</strong>,  Visma Consulting (2013-2013)<br />
@@ -56,11 +60,11 @@ Augmented Reality application for KLM Royal Dutch Airlines to entertain their pa
 </tr>
 <tr>
 <td width="80">Languages:</td>
-<td width="494">C++, C#, Java, Python, PHP, GLSL, JavaScript</td>
+<td width="494">C++, C#, Java, Scala, Python, PHP, GLSL, JavaScript</td>
 </tr>
 <tr>
 <td width="80">Technologies:</td>
-<td width="494">Augmented Reality, SQL, HTML5, CSS3</td>
+<td width="494">Spark, AWS, Augmented Reality, SQL, HTML5, CSS3</td>
 </tr>
 <tr>
 <td width="80">Libraries</td>

@@ -7,7 +7,7 @@ Here is a very basic example on how to limit and printing the FPS when you are u
 ### The timer function
 The timer function is what selects when to update the frame. It measures the time taken to draw the frame and allows the program to sleep when not drawing. Notice that the int flag variable is unused.
 
-```cpp
+{% highlight cpp %}
 void timer(int flag) {
     drawStartTime = clock();
     glutPostRedisplay();
@@ -19,14 +19,14 @@ void timer(int flag) {
 
     glutTimerFunc(delayToNextFrame, timer, 0);
 }
-```
+{% endhighlight %}
 
 <!--more-->
 
 ### The display function
 Here, we are using a very simple display function, the functions called are simple drawing the frame and GUI, while we are sending the processor clock value to the fpsTimer class for processing.
 
-```cpp
+{% highlight cpp %}
 void displayFunc() {
     fpsTimer->timeFrame();
 
@@ -35,14 +35,14 @@ void displayFunc() {
 
     glutSwapBuffers();
 }
-```
+{% endhighlight %}
 
 ### The fpsTimer class
 This class handles the measuring of FPS over an average number of frames and updates the text after that number of frames have passed, to reduce the flicker of the text. What these functions basically do, are to calculate the time since the last frame, average it and return the text string.
 
 **FpsTimer.h**
 
-```cpp
+{% highlight cpp %}
 #include <ctime>
 #include <deque>
 
@@ -60,11 +60,11 @@ public :
     void timeFrame();
     char *getFps();
 };
-```
+{% endhighlight %}
 
 **FpsTimer.cpp**
 
-```cpp
+{% highlight cpp %}
 #include "FpsTimer.h"
 
 FpsTimer::FpsTimer(int averageOfFrames) { 
@@ -106,12 +106,12 @@ char *FpsTimer::getFps(){
     }
     return fpsString;
 }
-```
+{% endhighlight %}
 
 ### Printing the FPS on screen
 The final step is to print the fps on screen using the following call and function:
 
-```cpp
+{% highlight cpp %}
 drawText(0.2f, 0.5, GLUT_BITMAP_HELVETICA_18, fpsTimer->getFps());
 
 void drawText(float x, float y, void *font, char *string) {
@@ -122,4 +122,4 @@ void drawText(float x, float y, void *font, char *string) {
         glutBitmapCharacter(font, *c);
     }
 }
-```
+{% endhighlight %}
