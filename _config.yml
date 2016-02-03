@@ -21,7 +21,7 @@ owner: Håvard Kindem
 markdown: kramdown
 
 encoding: utf-8
-highlighter: pygments
+highlighter: rouge #pygments
 
 kramdown:
   input: GFM
