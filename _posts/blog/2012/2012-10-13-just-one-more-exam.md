@@ -8,6 +8,6 @@ Finished my exam in Micro-controller system design today, this means that there 
 In the meantime, here is the final project that we did in MikSys. When recording this, the sound was not implemented yet as we were still putting it all together, but bothe the game and the drivers worked like a charm when we were done!
 
 <br />
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3rT2B9q1VBU" frameborder="0" allowfullscreen></iframe>
-</center>
+<div class="videowrapper">
+    <iframe src="https://www.youtube.com/embed/3rT2B9q1VBU" frameborder="0" allowfullscreen></iframe>
+</div>

@@ -1,20 +1,11 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-title: nexcius.github.io
-email: contact@nexcius.net
-description: > 
-  Share all the code!<br /> 
-  Game Development, Programming and Technology
+title: Bad Vertex
+#email: badvertex@gmail.com
+description: Game Development, Programming and Technology
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://nexcius.net" # the base hostname & protocol for your site
-twitter_username: nexcius
-github_username:  nexcius
+url: "https://badvertex.com" # the base hostname & protocol for your site
+#twitter_username: nexcius
+github_username:  badvertex
 owner: Håvard Kindem
 
 # Build settings
