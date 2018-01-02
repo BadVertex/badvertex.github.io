@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Printing and limiting FPS using GLUT
+author: Håvard Kindem
 ---
 Here is a very basic example on how to limit and printing the FPS when you are using GLUT. Although GLUT is very outdated (FreeGLUT might still be a viable option though), this will point you in the right way when you are trying to achieve this.
 

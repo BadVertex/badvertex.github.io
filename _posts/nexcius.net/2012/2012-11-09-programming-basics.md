@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Programming Basics
+author: Håvard Kindem
 ---
 Just re posting a little rant about programming basics that I thought that you might find interesting. This will give you a basic understanding on what is basic for all programming languages. We will be looking into the purpose of a programming language, what happens under the hood and basic data types.
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Messing Around with Vector Graphics in Inkscape
+author: Håvard Kindem
 ---
 Thought I should share this. I was tipped about a great blog describing how to use Inkscape to make 2D art. The blog is maintained by Chris Hildenbrand and can be found at [2dgameartguru.com](http://www.2dgameartguru.com/).
 

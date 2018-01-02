@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Hacker Manifesto
+author: Håvard Kindem
 ---
 &nbsp;&nbsp;&nbsp;<cite>Written by The Mentor January 8th 1986</cite>
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Android OpenGL Texture Manager
+author: Håvard Kindem
 ---
 At the moment, I am working on a little project for Android. It is going to be a 2D tank war game using the accelerometer in the device for controlling the tank. When doing this I made a little texture manager class so that I can refer to the resource ID instead of the index of the GL Texture, making it a lot easier to use textures in OpenGL. 
 Keep in mind that that code does not check for resources that are not loaded, you might want to add that or ensure that the required resources are loaded.

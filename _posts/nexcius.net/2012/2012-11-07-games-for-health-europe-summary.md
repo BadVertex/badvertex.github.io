@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Games For Health Europe - Summary
+author: Håvard Kindem
 ---
 So I’m safely back from the Netherlands and the Games4Health conference. It was a very interesting getting to meet the people that are making a better tomorrow. It was a mix of game developers, designers, medical doctors, economists and business people. I got to speak to many other game students from the Netherlands as well as lecturers from Brazil to the UK.
 

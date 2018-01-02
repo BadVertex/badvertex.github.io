@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Simple Twitter integration
+author: Håvard Kindem
 ---
 **Note:** This code is deprecated as of the Twitter API version 1.1. It should still work if you add in the authentication.
 
