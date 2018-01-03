@@ -14,19 +14,19 @@ To use the script, create a folder with the desired name of your server(<em>serv
 <h2>Cron Job setup</h2>
 Append the following content to your crontab:
 {% highlight bash %}
-*/10 * * * * wget -q -O /dev/null "http://<folder-name>.your-domain.com/?action=set&auth=<your-auth-code>"
+*/10 * * * * wget -q -O /dev/null "https://<folder-name>.your-domain.com/?action=set&auth=<your-auth-code>"
 {% endhighlight %}
 Save and exit.
 
 <h2>Example usage</h2>
 Manually update your server IP to your current public IP<br />
-`http://server1.your-domain.com/?action=set&auth=eVZKwTTFYASm6orAgzjm`
+`https://server1.your-domain.com/?action=set&auth=eVZKwTTFYASm6orAgzjm`
 
 Retrieve the server IP in a browser<br />
-`http://server1.your-domain.com/?action=get`
+`https://server1.your-domain.com/?action=get`
 
 Get your server IP in a terminal<br />
-`$ echo Server ip is: $(curl -sL http://server1.your-domain.com/?action=get)`
+`$ echo Server ip is: $(curl -sL https://server1.your-domain.com/?action=get)`
 
 <h2>Get the code</h2>
 You can download the source here: [server-redirect.zip]({{ "/assets/mario-ascii.png" | absolute_url }}) . 

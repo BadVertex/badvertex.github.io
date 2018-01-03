@@ -10,7 +10,7 @@ To add tooltips, the syntax would be like this:
 <a href="#" class="tooltip" data-title="Tooltip title" data-content="Tooltip text">The text you want tooltipped</a>
 {% endhighlight %}
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 This is what is looks like in action:
 
 <style type="text/css">

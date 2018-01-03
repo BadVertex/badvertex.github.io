@@ -21,8 +21,8 @@ a.twitterLink {color:black;}
 <div id="tweetContainer"></div>
 
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 <script type="text/javascript">
 
 var tweets = new Array();
@@ -44,11 +44,11 @@ $(document).ready(function() {
 });
 
 function getTweets() {
-    $.getJSON('http://api.twitter.com/1/statuses/user_timeline/Nexcius.json?count=10&trim_user=true&callback=?', 
+    $.getJSON('https://api.twitter.com/1/statuses/user_timeline/Nexcius.json?count=10&trim_user=true&callback=?', 
         function(data) {
             for(var i in data) {
                 var formattedString = data[i].text.replace(/((http|https):\/\/[^ ]+)/g, '<a class="twitterLink" href="$1">$1</a>');
-                formattedString = formattedString.replace(/([#@][^ ]+)/g, '<a class="twitterLink" href="http://twitter.com/$1">$1</a>');
+                formattedString = formattedString.replace(/([#@][^ ]+)/g, '<a class="twitterLink" href="https://twitter.com/$1">$1</a>');
                 
                 tweets[i] = formattedString;
             }

@@ -17,7 +17,7 @@ So what do you prefer? The customization and selection of Android devices or t
 <h2>Design &amp; usability</h2>
 One of the common myths about Android is that it is ugly and hard to use. In the beginning of Android, this was completely correct. iOS that was introduced in 2007 looked much better and was more of a complete product than the HTC Dream when it came in 2008. So what has changed since then?
 
-Android have focused much more on design and feel the later years as a response to the critique, this led to Android introducing design principles for Android applications and even publishing it all on their developer site: <a title="Android Developers: Design" href="http://developer.android.com/design/index.html" target="_blank">Android Design</a>. This has led to the applications, the base Android user interface and the manufacturer skins looking a lot better and following the same design principles.
+Android have focused much more on design and feel the later years as a response to the critique, this led to Android introducing design principles for Android applications and even publishing it all on their developer site: <a title="Android Developers: Design" href="https://developer.android.com/design/index.html" target="_blank">Android Design</a>. This has led to the applications, the base Android user interface and the manufacturer skins looking a lot better and following the same design principles.
 
 <!--more-->
 What has happened with iOS since 2007? Have a look for yourself:

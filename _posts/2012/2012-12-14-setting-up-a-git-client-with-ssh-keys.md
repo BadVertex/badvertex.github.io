@@ -6,10 +6,10 @@ author: Håvard Kindem
 <p>As a developer, version control systems are one of the daily routines. Surprisingly there are a lot of people who does not know how to use them even though there are a lot of good tutorials out there. Today we are adding a new one, trying to explain the setup process as simple as possible. For now, we will stick to using Git with Windows and a GUI.</p>
 <p>Start off by downloading the following files:</p>
 
-* <a title="msysgit" href="http://code.google.com/p/msysgit/downloads/list" target="_blank">msysgit</a>
-* <a title="TortoiseGit" href="http://code.google.com/p/tortoisegit/downloads/list" target="_blank">TortoiseGit</a>
-* <a title="plink" href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html" target="_blank">Plink</a>
-* <a title="puttygen.exe" href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html" target="_blank">PuTTYgen</a>
+* <a title="msysgit" href="https://code.google.com/p/msysgit/downloads/list" target="_blank">msysgit</a>
+* <a title="TortoiseGit" href="https://code.google.com/p/tortoisegit/downloads/list" target="_blank">TortoiseGit</a>
+* <a title="plink" href="https://www.chiark.greenend.org.uk/~sgtatham/putty/download.html" target="_blank">Plink</a>
+* <a title="puttygen.exe" href="https://www.chiark.greenend.org.uk/~sgtatham/putty/download.html" target="_blank">PuTTYgen</a>
 
 <h2>The installation proccess</h2>
 <p>To be sure, I'll go through every program to make sure that everything gets set up correctly.</p>

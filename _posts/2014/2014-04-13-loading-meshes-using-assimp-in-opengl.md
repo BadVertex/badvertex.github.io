@@ -3,9 +3,9 @@ layout: post
 title: Loading meshes using Assimp in OpenGL
 author: Håvard Kindem
 ---
-I have been catching up on OpenGL 4.4 lately and realized that there are few working examples on the newer versions of OpenGL. The following code uses <a title="assimp.sourceforge.net" href="http://assimp.sourceforge.net/" target="_blank">Assimp</a>, <a title="glfw.org" href="http://www.glfw.org/" target="_blank">GLFW</a> and <a title="glew.sourceforge.net" href="http://glew.sourceforge.net/" target="_blank">GLEW</a> to load and render all supported Assimp formats and requires OpenGL 3.0 or above.
+I have been catching up on OpenGL 4.4 lately and realized that there are few working examples on the newer versions of OpenGL. The following code uses <a title="assimp.sourceforge.net" href="https://assimp.sourceforge.net/" target="_blank">Assimp</a>, <a title="glfw.org" href="https://www.glfw.org/" target="_blank">GLFW</a> and <a title="glew.sourceforge.net" href="https://glew.sourceforge.net/" target="_blank">GLEW</a> to load and render all supported Assimp formats and requires OpenGL 3.0 or above.
 
-You will be required to set up an OpenGL context, I will presume that you have the knowledge to do that (if not, I can recommend <a title="Tutorial 1 : Opening a window" href="http://www.opengl-tutorial.org/beginners-tutorials/tutorial-1-opening-a-window/" target="_blank">this tutorial from opengl-tutorial.org</a>).
+You will be required to set up an OpenGL context, I will presume that you have the knowledge to do that (if not, I can recommend <a title="Tutorial 1 : Opening a window" href="https://www.opengl-tutorial.org/beginners-tutorials/tutorial-1-opening-a-window/" target="_blank">this tutorial from opengl-tutorial.org</a>).
 
 To use the Mesh class, this is all that is required:
 {% highlight cpp %}
