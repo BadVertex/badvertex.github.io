@@ -29,4 +29,4 @@ Get your server IP in a terminal<br />
 `$ echo Server ip is: $(curl -sL https://server1.your-domain.com/?action=get)`
 
 <h2>Get the code</h2>
-You can download the source here: [server-redirect.zip]({{ "/assets/mario-ascii.png" | absolute_url }}) . 
+You can download the source here: [server-redirect.zip]({{ "/assets/server-redirect.zip" | absolute_url }}) . 
