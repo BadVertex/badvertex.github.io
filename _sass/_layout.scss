@@ -161,6 +161,9 @@
     }
 }
 
+.rss-subscribe {
+    text-align: right;
+}
 
 
 /**
@@ -236,6 +239,15 @@
     }
 }
 
+.pagination {
+    text-align: center;
+
+    span, a {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+
 
 /**
 * Content
@@ -255,4 +267,9 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+.center-image {
+    margin: 0 auto;
+    display: block;
 }

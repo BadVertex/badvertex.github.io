@@ -19,3 +19,7 @@ kramdown:
   hard_wrap: false
 
 excerpt_separator: <!--more-->
+
+plugins: [jekyll-paginate]
+paginate: 5
+paginate_path: "/page/:num/"
