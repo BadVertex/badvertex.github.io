@@ -1,0 +1,7 @@
+_id: 1a26ce11-c99d-49c6-8ce3-395da29d8e70
+_parent: 2012-11-20-how-to-load-a-glsl-shader-in-opengl-using-c
+name: woop
+date: '2016-05-25 08:10:44'
+url: ''
+message: "u missing the template argument where ...\r\nstd::vector vertShaderError((logLength &gt; 1) ? logLength : 1); and std::vector fragShaderError((logLength &gt; 1) ? logLength : 1);\r\nthat should be (if i didn't ... ...)\r\nchange the std::vector to std::vector"
+email: 3ad04dc147d27785731754718f3608b8

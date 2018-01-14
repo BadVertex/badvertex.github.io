@@ -1,0 +1,7 @@
+_id: d544d3a0-b2ee-4116-9f96-2904366b9f62
+_parent: 2012-11-20-how-to-load-a-glsl-shader-in-opengl-using-c
+name: Stephan
+date: '2013-10-13 21:26:15'
+url: ''
+message: "Thank you very much!\r\n\r\nThere's an error at the line:\r\n\r\n<code>   content.append(line + \"n\"); </code>\r\n\r\nin readFile.\r\nI suppose it should be \r\n\r\n<code>   content.append(line + \"\\n\"); </code>"
+email: da62f7f098c80ad88c4db9b6a421d159

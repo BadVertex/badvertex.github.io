@@ -9,10 +9,7 @@ The one argument that I will not discuss here is the price of different devices,
 
 So what do you prefer? The customization and selection of Android devices or the straight forward iOS devices?
 
-![HTC One X and iPhone 5 side by side (Source: TechnoBuffalo)]({{ "/assets/new-iphone-5-vs-htc-one-x-640x480.jpg" | absolute_url }}){: .center-image }
-*HTC One X and iPhone 5 side by side (Source: TechnoBuffalo)*
-{: style="text-align: center;"}
-<br />
+{% include helpers/image.html name="new-iphone-5-vs-htc-one-x-640x480.jpg" caption="HTC One X and iPhone 5 side by side (Source: TechnoBuffalo)" centered=true %}
 
 <h2>Design &amp; usability</h2>
 One of the common myths about Android is that it is ugly and hard to use. In the beginning of Android, this was completely correct. iOS that was introduced in 2007 looked much better and was more of a complete product than the HTC Dream when it came in 2008. So what has changed since then?
@@ -22,9 +19,7 @@ Android have focused much more on design and feel the later years as a response 
 <!--more-->
 What has happened with iOS since 2007? Have a look for yourself:
 
-![HTC One X and iPhone 5 side by side (Source: TechnoBuffalo)]({{ "/assets/Iphone_Comparison_1-5.jpg" | absolute_url }}){: .center-image }
-*iPhone versions (Source: Marquez Blogger)*
-{: style="text-align: center;"}
+{% include helpers/image.html name="Iphone_Comparison_1-5.jpg" caption="iPhone versions (Source: Marquez Blogger)" centered=true %}
 
 See any notable difference? Me neither, Android wins.
 

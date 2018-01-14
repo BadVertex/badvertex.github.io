@@ -1,0 +1,7 @@
+_id: 3564271c-d82c-44d0-9f8e-fd7680c757da
+_parent: 2012-11-20-how-to-load-a-glsl-shader-in-opengl-using-c
+name: RG
+date: '2017-08-06 21:31:18'
+url: ''
+message: ".\\src\\GLShader.cpp:52:54: error: 'vertShaderError' was not declared in this scope\r\n     glGetShaderInfoLog(vertShader, logLength, NULL, &amp;vertShaderError[0]);\r\n                                                      ^\r\n..\\src\\GLShader.cpp:63:17: error: missing template arguments before 'fragShaderError'\r\n     std::vector fragShaderError((logLength &gt; 1) ? logLength : 1);\r\n    \r\nNo clue             ^"
+email: c293e0bf231d3805dd431e193c5b9d79

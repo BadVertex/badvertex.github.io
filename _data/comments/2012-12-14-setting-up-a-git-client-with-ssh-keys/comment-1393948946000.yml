@@ -1,0 +1,9 @@
+_id: 35b52b98-3931-429d-b6dd-924e96a804dd
+_parent: 2012-12-14-setting-up-a-git-client-with-ssh-keys
+name: Jo Schneider
+date: '2014-03-04 17:02:26'
+url: ''
+message: >-
+  Make sure, you COPY the public key from the puttygen window. The code you get
+  from the file when saving the public key within puttygen will not work.
+email: 4c69402811741e591e08c924fefad5a0

@@ -1,0 +1,12 @@
+{% capture postSlug %}{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}{% endcapture %}
+{% assign assetPath = postSlug | prepend: '/assets/posts/' | append: '/' | append: include.name %}
+
+<figure class="figure{% if include.caption %} figure-caption{% endif %}{% if include.centered %} figure-centered{% endif %}">
+    <img src="{{ assetPath }}"
+        {% if include.alt %} alt="{{ include.alt }}" {% endif %}
+        {% if include.width %} width="{{ include.width }}" {% endif %}
+    />
+    {% if include.caption %}
+        <figcaption>{{ include.caption }}</figcaption>
+    {% endif %}
+</figure>

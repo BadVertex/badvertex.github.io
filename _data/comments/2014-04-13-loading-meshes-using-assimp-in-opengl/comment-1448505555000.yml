@@ -1,0 +1,7 @@
+_id: d296d4b0-d7ef-440f-bbe6-235913698ba5
+_parent: 2014-04-13-loading-meshes-using-assimp-in-opengl
+name: Mike Hou
+date: '2015-11-26 03:39:15'
+url: ''
+message: "Hi, I learned assimp importing from this tutorial, thank you. \r\nI think the code\r\n  glVertexAttribPointer(3, 3, GL_FLOAT, GL_FALSE, 0, NULL);\r\n  glEnableVertexAttribArray (3);\r\nshould be removed since they are not used, am I correct?"
+email: c99c43cf23bd3433a3597e48dc58602d

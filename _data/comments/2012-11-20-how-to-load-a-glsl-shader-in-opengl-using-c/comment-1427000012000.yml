@@ -1,0 +1,7 @@
+_id: 3c18b5f8-4c78-4583-b8b3-fb2463fd738c
+_parent: 2012-11-20-how-to-load-a-glsl-shader-in-opengl-using-c
+name: Joe Kerman
+date: '2015-03-22 05:53:32'
+url: ''
+message: "just wanted to point out at this line:\r\n<code>std::vector vertShaderError((logLength &gt; 1) ? logLength : 1);</code>\r\nYou didn't specify the type. Its should be:\r\n<code>std::vector vertShaderError((logLength &gt; 1) ? logLength : 1);</code>\r\nThanks"
+email: 6f13f45c9c7e9353183eb8bac02b4920

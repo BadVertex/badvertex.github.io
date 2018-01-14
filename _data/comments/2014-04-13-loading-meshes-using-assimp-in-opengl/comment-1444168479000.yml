@@ -1,0 +1,9 @@
+_id: 78c93985-9505-4dd0-83ac-5ef9cab3abbd
+_parent: 2014-04-13-loading-meshes-using-assimp-in-opengl
+name: George Broughton
+date: '2015-10-06 23:54:39'
+url: ''
+message: >-
+  MeshEntry constructor, all of your deletes should be delete[] as they are an
+  array, or they will leak memory
+email: 19c69f127800ddfa1d4b001373342d76

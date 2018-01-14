@@ -1,0 +1,7 @@
+_id: eba48580-271f-4cb6-834b-485adcadb088
+_parent: 2012-11-20-how-to-load-a-glsl-shader-in-opengl-using-c
+name: Kim Einar Larsen
+date: '2014-10-15 14:39:41'
+url: ''
+message: "Takk!\r\nJeg holder på å lærer meg OpenGL/GLSL så dette var lærerikt. Før jeg kom over dette eksempelet så hadde jeg problemer med å bruke std::string i glShaderSource da jeg ikke ønsket å bruke const char* så jeg googlet meg frem til dette.\r\nNote: vector ---&gt; vector"
+email: ee147e73be8ed50c218f12686f1d4a46

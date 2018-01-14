@@ -1,0 +1,7 @@
+_id: f20462ab-b533-4972-9225-5a2c34c2d0f2
+_parent: 7757c440-bb1a-4d12-81b7-c9d4f9cb7e6e
+name: Tomas Mikulica
+date: '2014-11-29 14:37:24'
+url: ''
+message: "Thank you. By the the way I think that the line (in texcoord loading):\r\n\r\nglVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, NULL);\r\n\r\nshould look more like that:\r\n\r\nglVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 0, NULL);\r\n\r\nBecause you are passing to shader only 2 floats not 3. It took me awhile (and lot of weird stuff on my screen :) ) to figure that out ;)"
+email: e934615d5a13705e173df488cb08fcce

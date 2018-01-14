@@ -1,0 +1,47 @@
+<article id="comment-{{ include.id }}" class="comment">
+	<div class="comment-content">
+		<div class="comment-header">	
+			<div class="comment-avatar">
+				<img src="https://www.gravatar.com/avatar/{{ include.email }}?d=mm&s=32" width="32" height="32">
+			</div>
+	
+			<div class="comment-meta">
+				<h3 class="comment-author">
+					{% if (include.url) and (include.url != '@url') %}
+						<a rel="nofollow" href="{{ include.url }}">{{ include.name }}</a>
+					{% else %}
+						{{ include.name }}
+					{% endif %}
+				</h3>
+				<span class="comment-date">
+					{% if include.date %}
+					 on <a title="Permalink to this comment" href="#comment-{{ include.id }}">{{include.date | date: '%b %d, %Y %H:%M'}}</a>
+					{% endif %}
+				</span >
+				<p class="comment-reply">
+					<a href="">Reply</a>
+				</p>
+			</div>
+		</div>
+		<div class="comment-body">
+			{{ include.message | markdownify }}
+		</div>
+	</div>
+
+	<div class="comment-replies">
+			{% if site.data.comments[post_slug] %}
+            {% assign replies = site.data.comments[post_slug] | where_exp: "item", "item._parent == include.id" | sort: "date"  %}
+
+            {% for reply in replies %}
+                {% assign id = reply._id %}
+                {% assign email = reply.email %}
+                {% assign name = reply.name %}
+                {% assign url = reply.url %}
+                {% assign date = reply.date %}
+                {% assign message = reply.message %}
+
+                {% include post-comment.html id=id email=email name=name url=url date=date message=message %}
+            {% endfor %}
+        {% endif %}
+	</div>
+</article>

@@ -4,7 +4,7 @@ layout: default
 <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
 
   <header class="post-header">
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} by <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
   </header>
 
@@ -12,4 +12,7 @@ layout: default
     {{ content | replace: '<!--more-->', '<a class="anchor" id="read-more"></a>' }}
   </div>
 
+  {% if page.disable-comments != true %}
+    {% include post-comments.html %}
+  {% endif %}
 </article>

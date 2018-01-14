@@ -3,18 +3,16 @@ layout: post
 title: Determining if two lines intersect
 author: Håvard Kindem
 ---
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
 Today we are going to take a look at intersecting lines. There are some information on this scattered around the internet, but a good example is hard to find. The uses for this is mainly in 2D, it can be applied to lighting, physics and all other applications using rays.
 
-![Intersecting and non-intersecting lines]({{ "/assets/lines.png" | absolute_url }}){: .center-image }
+{% include helpers/image.html name="lines.png" caption="Intersecting and non-intersecting lines" centered=true %}
 
 To solve this, we want to convert our lines to the following form:
 $$ Ax + By = C $$
 
 This allows us to create an equation that we can solve, with no need for ray tracing or other techniques. Converting our lines to this form is pretty trivial, as shown below. We do this for both lines, giving us the equations for both.
 
-$$ 
+$$
 A = y_{2} - y_{1}\\B = x_{1} - x_{2}\\C = A \cdot x_{1} + B \cdot y_{1}
 $$
 
@@ -80,4 +78,4 @@ public static bool intersects(Line a, Line b)
 }
 {% endhighlight %}
 
-Source: [Line.cs]({{ "/assets/Line.cs" | absolute_url }})
+Source: [Line.cs](/assets/posts/{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}/Line.cs)

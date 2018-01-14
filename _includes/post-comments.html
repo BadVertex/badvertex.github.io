@@ -1,0 +1,24 @@
+{% capture post_slug %}{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}{% endcapture %}
+
+<section class="comments">
+    <div class="comments-list{% if site.data.comments[post_slug] == null %} hidden{% endif %}">
+        <h2>Comments</h2>
+
+        {% if site.data.comments[post_slug] %}
+            {% assign comments = site.data.comments[post_slug] | where_exp: "item", "item._parent == post_slug" | sort: "date"  %}
+
+            {% for comment in comments %}
+                {% assign id = comment._id %}
+                {% assign email = comment.email %}
+                {% assign name = comment.name %}
+                {% assign url = comment.url %}
+                {% assign date = comment.date %}
+                {% assign message = comment.message %}
+
+                {% include post-comment.html id=id email=email name=name url=url date=date message=message %}
+            {% endfor %}
+        {% endif %}
+    </div>
+
+    {% include post-new-comment.html %}
+</section>

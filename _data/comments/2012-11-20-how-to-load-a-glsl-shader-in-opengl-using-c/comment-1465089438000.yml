@@ -1,0 +1,7 @@
+_id: 29996770-cdea-40a8-a916-e13a7022ca1f
+_parent: 2012-11-20-how-to-load-a-glsl-shader-in-opengl-using-c
+name: Romualdo Villalobos
+date: '2016-06-05 03:17:18'
+url: 'http://www.gamebite10.com'
+message: "some faster!!\r\nstd::string readFile(const char* filepath)\r\n{\r\n\tstd::ifstream myFile(filepath);\r\n\tstd::string content((std::istreambuf_iterator(myFile)),\r\n\t\t\t\t\t\tstd::istreambuf_iterator());\r\n\treturn content;\r\n}"
+email: 0068295d351f657f0f5f7638db7a44b7

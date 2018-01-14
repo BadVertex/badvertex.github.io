@@ -1,0 +1,13 @@
+_id: e6247f23-5eab-48ad-91c6-3baea21ee153
+_parent: 90d27a3c-8fca-4a26-9aa4-ffa53be70dfa
+name: Nex
+date: '2013-09-02 21:13:55'
+url: ''
+message: >-
+  Hi Marcus, thank you for noticing! I should actually have omitted that, as it
+  is part of an older version of the code where the corners were calculated by
+  using an interpolation-like expression instead. It worked, but was not very
+  intuitive and had performed a little worse if I remember correctly. If you are
+  interested, I can hook you up with the code. I'll get this post cleaned up
+  shortly. Thanks again ;)
+email: 277cb0f0a02f4295b55ab7620b679504

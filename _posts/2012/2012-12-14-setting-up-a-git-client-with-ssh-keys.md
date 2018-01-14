@@ -27,17 +27,13 @@ author: Håvard Kindem
 <h2>Creating your SSH key pair</h2>
 <p>Start up PuTTYgen, either from where you placed it or from the bin folder in your TortoiseGit installation directory if you got them through that installer. Press the <em>Generate</em> button and move your mouse over the grey area to create some randomness.</p>
 
-![After generating the RSA key in PuTTYgen]({{ "/assets/puttygen.png" | absolute_url }}){: .center-image }
-*After generating the RSA key in PuTTYgen*
-{: style="text-align: center;"}
+{% include helpers/image.html name="puttygen.png" caption="After generating the RSA key in PuTTYgen" centered=true %}
 
 <p>Make sure that you save your private key as you will be needing this to connect to the Git server. Note that this is your private key, not to be shared by anyone! Now copy your public key (the key that is visible in the PuTTYgen window) and give it to your Git admin or if you are using GitHub, GitLab, etc, add it to your SSH keys under your <em>Account Settings</em> » <em>SSH Keys.</em></p>
 
 <h2>Connecting to the Git server</h2>
 <p>So for the epic conclusion, connecting. Right click in any folder or on your desktop and select <em>Git Clone</em>.</p>
 
-![Tortoise Git Clone window]({{ "/assets/gitclone.png" | absolute_url }}){: .center-image }
-*Tortoise Git Clone window*
-{: style="text-align: center;"}
+{% include helpers/image.html name="gitclone.png" caption="Tortoise Git Clone window" centered=true %}
 
 <p>Add the URL of the Git repository and change the directory if you please. Finally, select <em>"Load Putty Key"</em> and browse to your private SSH key that you saved earlier. Press OK and you are good to go!</p>

@@ -1,0 +1,12 @@
+_id: eada94d2-edc4-4972-83e1-4d50afba0369
+_parent: 6a082f81-5957-45e8-bfee-a356b1196cda
+name: Nex
+date: '2014-09-30 21:17:47'
+url: 'http://www.nexcius.net'
+message: >-
+  Greetings Skirrah. What version of Assimp are you using? As I have understood,
+  there is a problem with the 3.1(.1) version of the Windows binaries. Until the
+  issue is fixed, I would recommend that you downgrade your version of Assimp.
+  The bug has been reported to the Github repo, you can keep up with the status
+  of it here: https://github.com/assimp/assimp/issues/302
+email: 277cb0f0a02f4295b55ab7620b679504

@@ -12,30 +12,30 @@ Eclipse is an Integrated Development Kit (IDE), that means that we get a code ed
 
 So: go to the <a href="http://www.eclipse.org/downloads/">Eclipse website</a> to download Eclipse Classic and install it. Note: If you are downloading the .zip file, you only need to extract it to a folder and run it from there.
 
-![Eclipse downloads list]({{ "/assets/eclipse_downloads.png" | absolute_url }})
+{% include helpers/image.html name="eclipse_downloads.png" caption="Eclipse downloads list" centered=true %}
 
 <h2>Your first project</h2>
 Start by going to File, New, Java Project on the toolbar. Type in MyFirstProject as the project name. You might be asked to set your workspace directory, this is where your project will be saved to. For now, just press Finish and we are good to go.
 
-![New project]({{ "/assets/eclipse_new.png" | absolute_url }})
+{% include helpers/image.html name="eclipse_new.png" caption="New project" centered=true %}
 
 You can find your newly created project in the Package Explorer on the left. Open it and right click the src folder, select New, Class. Fill in MyClass as the name and check “public static void main” as marked in the picture below and press Finish.
 
-![Create a class]({{ "/assets/eclipse_newclass.png" | absolute_url }})
+{% include helpers/image.html name="eclipse_newclass.png" caption="Create a class" centered=true %}
 
 You will now see something like this:
 
-![How it should look]({{ "/assets/eclipse_window.png" | absolute_url }})
+{% include helpers/image.html name="eclipse_window.png" caption="How it should look" centered=true width="80%" %}
 
 <h2>Getting started on the code</h2>
  Before we continue, I’ll introduce some new terms and what they are.
-<strong>Variable:</strong> This is data that can be changed, the opposite of constants. This is used to store numbers, strings and objects.
-<strong>Argument:</strong> This is basically an input variable for functions.
+<br /><strong>Variable:</strong> This is data that can be changed, the opposite of constants. This is used to store numbers, strings and objects.
+<br /><strong>Argument:</strong> This is basically an input variable for functions.
 Function: This is best explained as a collection of actions. It can take arguments as input and it can return variables.
-<strong>Class:</strong> This is what is referred to as objects, it is a collection of functions and variables.
-<strong>Comments:</strong> This is text used to comment on your code to help you and others understand what it does.
-<strong>Data type:</strong> This describes the type of a variable or function. There are four main groups: Strings(text), Integers(whole numbers), Floats(decimal numbers) and Booleans(true or false).
-<strong>Visibility:</strong> The access level of classes, functions and variables. With access level it means who can access it. Private means that only members of the same class can access it, public means that all classes can access it and protected means that subclasses can access it, but don’t worry about the latter for now.So, let me explain the code that Eclipse generated for us.
+<br /><strong>Class:</strong> This is what is referred to as objects, it is a collection of functions and variables.
+<br /><strong>Comments:</strong> This is text used to comment on your code to help you and others understand what it does.
+<br /><strong>Data type:</strong> This describes the type of a variable or function. There are four main groups: Strings(text), Integers(whole numbers), Floats(decimal numbers) and Booleans(true or false).
+<br /><strong>Visibility:</strong> The access level of classes, functions and variables. With access level it means who can access it. Private means that only members of the same class can access it, public means that all classes can access it and protected means that subclasses can access it, but don’t worry about the latter for now.So, let me explain the code that Eclipse generated for us.
 
 {% highlight java %}
 public class MyClass {

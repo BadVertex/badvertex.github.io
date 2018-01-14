@@ -1,0 +1,7 @@
+_id: 62dc68e8-8c38-4000-a495-33e54a313a22
+_parent: 2012-11-20-how-to-load-a-glsl-shader-in-opengl-using-c
+name: hsaturn
+date: '2017-02-19 23:43:44'
+url: ''
+message: "std::vector vertShaderError  Error there !!!\r\n\r\nThis is probably not your fault, the template argument may have been deleted by any html token cleaner etc..\r\n\r\nI've used GLchar and it compiles correctly\r\n\r\nstd::vector (char) vertShaderError ...\r\n\r\nreplace parenthesis of course"
+email: b502f096853fe01508dde25f7a5b0263

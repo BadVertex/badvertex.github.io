@@ -1,0 +1,7 @@
+_id: 6a082f81-5957-45e8-bfee-a356b1196cda
+_parent: 2014-04-13-loading-meshes-using-assimp-in-opengl
+name: Skirrah
+date: '2014-09-27 14:06:55'
+url: ''
+message: "Very helpful code but perhaps someone could help me resolve an error when using with assimp-3.1.-win-binaries. \r\nCode compiles but gives runtime error; \"The program can't start because assimp.exe is missing from your computer.\"  \r\nThe assimp.dll file is in the same folder as the program executable."
+email: 12ec29fbd953795d1010531eaf5eca11

@@ -1,0 +1,7 @@
+_id: 0f5f0a05-4f1d-4bc8-bdca-e4463751faad
+_parent: 2012-11-20-how-to-load-a-glsl-shader-in-opengl-using-c
+name: Joe
+date: '2014-06-28 05:49:44'
+url: ''
+message: "Thanks!\r\n\r\nJust wanted to let you know that in using this today I was getting out of bounds errors. I found that when you check errors on the fragment and vertex shaders, it doesn't check if logLength is less than one like you did after linking the program. I changed the lines to:\r\n\r\nstd::vector vertShaderError((logLength &gt; 1) ? logLength : 1);\r\n\r\nand \r\n\r\nstd::vector fragShaderError((logLength &gt; 1) ? logLength : 1);\r\n\r\nThanks again!"
+email: 8c8ee2c231c3470006b2fe83b439da35

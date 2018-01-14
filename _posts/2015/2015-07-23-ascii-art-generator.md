@@ -3,7 +3,7 @@ layout: post
 title: Ascii Art Generator
 author: Håvard Kindem
 ---
-![Mario and Luigi in ASCII]({{ "/assets/mario-ascii.png" | absolute_url }})
+{% include helpers/image.html name="mario-ascii.png" width="100%" %}
 
 Sun, beer, volleyball, travel, bathing, swimming, longboarding, and of course... programming!
 
