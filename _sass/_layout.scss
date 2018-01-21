@@ -312,7 +312,7 @@
     padding-left: $spacing-unit;
 }
 
-@include media-query($on-laptop) {
+@include media-query($on-palm) {
     .comment-replies {
         padding-left: $spacing-unit / 2;
     }
@@ -320,7 +320,14 @@
 
 .comment {
     margin-bottom: $spacing-unit;
+
+    /** Limit left padding to 3 **/
+    & .comment .comment .comment-replies {
+        padding-left: 0
+    }
 }
+
+
 
 .comment-avatar {
     float: left;
