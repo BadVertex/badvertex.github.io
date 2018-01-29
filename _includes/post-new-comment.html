@@ -3,12 +3,12 @@
     <p id="reply-to">Replying to <span id="reply-target"></span>&nbsp;(<a href="javascript:clearReplyTo();">clear</a>)</p>
 </div>
 
-<form id="post-new-comment" class="form" action="{{ site.staticmanUrl }}" method="post">
+<form id="post-new-comment" class="form" action="{{ site.staticmanUrl }}" method="post" onsubmit="return formSubmit(this)">
     <input type="hidden" name="options[slug]" value="{{ post_slug }}">
     <input id="comment-parent" type="hidden" name="options[parent]" value="{{ post_slug }}">
     <input type="hidden" name="options[origin]" value="{{ site.url }}{{ page.url }}">
 
-    <input type="hidden" name="options[redirect]" value="{{ site.url }}thankyou.html">
+    <input type="hidden" name="options[redirect]" value="{{ site.url }}/thankyou.html">
     <input type="hidden" name="options[reCaptcha][siteKey]" value="6LfZXT4UAAAAADYTgNOeU04CyzYdBWAocActdGMJ">
     <input type="hidden" name="options[reCaptcha][secret]" value="HtdxDI3BU/FXc5xgdzW+lXzorddgTXftDcYocvna6nM0kKPMuuaDMMhb/jKc/IP5wOTSv6guXYyTjUVbcQBm2crzIJRJOQ+6Wuv9IU1B7YW67tC8bci104HSYltXXJWgRkl+aw14dMTZpcOqnNVK9pc9iXJMohAKL6guVvG9QRs=">
 
@@ -48,6 +48,21 @@
         document.getElementById("reply-to").style.display = "none";
     }
 
+    function formSubmit(e) {
+        if(grecaptcha.getResponse() == "") {
+            return false;
+        }
+
+        var previewButton = document.getElementById('submit-comment');
+        previewButton.value = "Submitting";
+        
+        setTimeout(function() {
+            previewButton.disabled = true;
+        }, 100);
+
+        return true;
+    }
+
     // Markdown preview
     var converter = new showdown.Converter();
     var previewButton = document.getElementById('comment-preview-button');
@@ -67,8 +82,4 @@
         }
     };
 
-    var submitButton = document.getElementById("submit-comment");
-    submitButton.onclick = function() {
-        submitButton.disbled = true;
-    };
 </script>

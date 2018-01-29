@@ -389,6 +389,7 @@
         height: 100px;
         min-height: 100px;
         max-height: 300px;
+        line-height: 1.5em;
     }
 
 
@@ -402,7 +403,13 @@
         &:hover {
             background-color: $brand-color-dark;
         }
+
+        &:disabled, &[disabled] {
+            background-color: darken($brand-color, 30%);
+        }
     }
+
+    
 
     .form-recaptcha {
         margin-top: $spacing-unit / 2;
