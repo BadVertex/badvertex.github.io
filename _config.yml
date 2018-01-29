@@ -23,3 +23,5 @@ excerpt_separator: <!--more-->
 plugins: [jekyll-paginate]
 paginate: 5
 paginate_path: "/page/:num/"
+
+staticmanUrl: https://api.staticman.net/v2/entry/badvertex/badvertex.github.io/master/comments

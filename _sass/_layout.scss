@@ -349,6 +349,20 @@
     padding-right: $spacing-unit /2;
 }
 
+#new-comment {
+    margin-bottom: $spacing-unit /2;
+
+    & > h2, p {
+        margin-bottom: 0;
+    }
+
+    & > #reply-to {
+        font-size: $small-font-size;
+        font-style: italic;
+        display: none;
+    }
+}
+
 #post-new-comment {
     input, textarea {
         &:focus {
