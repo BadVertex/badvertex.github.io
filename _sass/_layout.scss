@@ -404,6 +404,11 @@
         }
     }
 
+    .form-recaptcha {
+        margin-top: $spacing-unit / 2;
+        margin-bottom: $spacing-unit / 2;
+    }
+
 
     $checkbox-size: 20px;
     $checkbox-padding: 4px;

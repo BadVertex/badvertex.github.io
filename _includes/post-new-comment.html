@@ -8,8 +8,9 @@
     <input id="comment-parent" type="hidden" name="options[parent]" value="{{ post_slug }}">
     <input type="hidden" name="options[origin]" value="{{ site.url }}{{ page.url }}">
 
-    <input type="hidden" name="options[reCaptcha][siteKey]" value="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX">
-    <input type="hidden" name="options[reCaptcha][secret]" value="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA">
+    <input type="hidden" name="options[redirect]" value="{{ site.url }}thankyou.html">
+    <input type="hidden" name="options[reCaptcha][siteKey]" value="6LfZXT4UAAAAADYTgNOeU04CyzYdBWAocActdGMJ">
+    <input type="hidden" name="options[reCaptcha][secret]" value="HtdxDI3BU/FXc5xgdzW+lXzorddgTXftDcYocvna6nM0kKPMuuaDMMhb/jKc/IP5wOTSv6guXYyTjUVbcQBm2crzIJRJOQ+6Wuv9IU1B7YW67tC8bci104HSYltXXJWgRkl+aw14dMTZpcOqnNVK9pc9iXJMohAKL6guVvG9QRs=">
 
     <input class="form-field text-field" type="text" name="fields[name]" placeholder="Name" required/>
     <input class="form-field text-field" type="email" name="fields[email]" placeholder="Email address (will not be public)" required/>
@@ -18,16 +19,17 @@
     <textarea id="form-comment-input" class="form-field text-field" rows="10" name="fields[message]" placeholder="Comment. Markdown is accepted." required></textarea>
     <div id="comment-preview"></div>
 
-    <div class="material-checkbox">
+    <!--<div class="material-checkbox">
         <input id="form-subscribe" type="checkbox" name="options[subscribe]" value="email">
         <label for="form-subscribe">I want to be notified of new comments</label>
     </div>
+    -->
     <button type="button" id="comment-preview-button">Preview</button>
 
-    <div class="form-recaptcha g-recaptcha" data-sitekey="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"></div>
-    <!--<script src='https://www.google.com/recaptcha/api.js'></script> -->
+    <div class="form-recaptcha g-recaptcha" data-sitekey="6LfZXT4UAAAAADYTgNOeU04CyzYdBWAocActdGMJ"></div>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
-    <input class="cta" type="submit" value="Comment"/>
+    <input id="submit-comment" class="cta" type="submit" value="Comment"/>
 </form>
 
 <script type="text/javascript" src="https://cdn.rawgit.com/showdownjs/showdown/1.8.6/dist/showdown.min.js"></script>
@@ -63,5 +65,10 @@
             commentPreview.style.display = "none";
             previewButton.innerText = "Preview";
         }
+    };
+
+    var submitButton = document.getElementById("submit-comment");
+    submitButton.onclick = function() {
+        submitButton.disbled = true;
     };
 </script>

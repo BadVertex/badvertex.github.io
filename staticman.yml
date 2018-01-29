@@ -10,22 +10,12 @@ comments:
 
   branch: "master"
 
-  # Text to use as the commit message or pull request title. Accepts placeholders.
-  commitMessage: "New comment"
+  commitMessage: "New comment on {options.slug} from {fields.name}"
 
-  # (*) REQUIRED
-  #
-  # Destination path (filename) for the data files. Accepts placeholders.
   filename: "comment-{@timestamp}"
 
-  # The format of the generated data files. Accepted values are "json", "yaml"
-  # or "frontmatter"
   format: "yaml"
 
-  # List of fields to be populated automatically by Staticman and included in
-  # the data file. Keys are the name of the field. The value can be an object
-  # with a `type` property, which configures the generated field, or any value
-  # to be used directly (e.g. a string, number or array)
   generatedFields:
     date:
       type: date
@@ -34,7 +24,6 @@ comments:
 
   moderation: true
 
-  # Name of the site. Used in notification emails.
   name: "badvertex.com"
 
   # Notification settings. When enabled, users can choose to receive notifications
@@ -63,3 +52,8 @@ comments:
 
   transforms:
     email: md5
+
+  reCaptcha:
+    enabled: true
+    siteKey: "6LfZXT4UAAAAADYTgNOeU04CyzYdBWAocActdGMJ"
+    secret: "HtdxDI3BU/FXc5xgdzW+lXzorddgTXftDcYocvna6nM0kKPMuuaDMMhb/jKc/IP5wOTSv6guXYyTjUVbcQBm2crzIJRJOQ+6Wuv9IU1B7YW67tC8bci104HSYltXXJWgRkl+aw14dMTZpcOqnNVK9pc9iXJMohAKL6guVvG9QRs="
