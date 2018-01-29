@@ -1,12 +1,12 @@
 # Site settings
 title: badvertex
-#email: badvertex@gmail.com
+email: badvertex@gmail.com
 description: Game Development, Programming and Technology
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://badvertex.com" # the base hostname & protocol for your site
 #twitter_username: nexcius
 github_username:  badvertex
-owner: Håvard Kindem
+#owner: Håvard Kindem
 
 # Build settings
 markdown: kramdown
