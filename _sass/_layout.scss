@@ -16,10 +16,12 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
+    border: 0;
+    color: $header-color;
 
-    &,
-    &:visited {
-        color: $grey-color-dark;
+    &:hover {
+        border: 0;
+        color: lighten($header-color, 25%);
     }
 }
 
@@ -200,10 +202,7 @@
     display: block;
     letter-spacing: -1px;
     line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
+    font-size: 2em; 
 }
 
 .post-content {
