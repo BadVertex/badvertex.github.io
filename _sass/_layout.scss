@@ -202,7 +202,7 @@
 
 .post-title {
     display: block;
-    font-size: 2.5em;
+    font-size: 2.2em;
     letter-spacing: -1px;
     line-height: 1;
 
@@ -214,29 +214,7 @@
 .post-content {
     margin-bottom: $spacing-unit;
 
-    h2 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
-
-    h3 {
-        font-size: 26px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
-
-    h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
-    }
+    
 }
 
 .pagination {
