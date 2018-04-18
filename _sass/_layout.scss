@@ -196,13 +196,8 @@
 /**
  * Posts
  */
-.post-header {
-    margin-bottom: $spacing-unit;
-}
-
 .post-title {
     display: block;
-    font-size: 2.2em;
     letter-spacing: -1px;
     line-height: 1;
 
@@ -212,9 +207,7 @@
 }
 
 .post-content {
-    margin-bottom: $spacing-unit;
-
-    
+    margin-bottom: $spacing-unit;    
 }
 
 .pagination {
