@@ -11,13 +11,13 @@ This will output anything written to the console (including lint errors), print 
 
 ```groovy
 tasks.withType(Test) {
-        testLogging {
-            exceptionFormat "full"
-            showCauses true
-            showExceptions true
-            showStackTraces true
-            showStandardStreams true
-            events = ["passed", "skipped", "failed", "standardOut", "standardError"]
-        }
+    testLogging {
+        exceptionFormat "full"
+        showCauses true
+        showExceptions true
+        showStackTraces true
+        showStandardStreams true
+        events = ["passed", "skipped", "failed", "standardOut", "standardError"]
     }
+}
 ```
