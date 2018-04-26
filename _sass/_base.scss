@@ -52,6 +52,18 @@ img {
 /**
  * Figures
  */
+figure {
+    @include media-query($on-laptop) {
+        margin-right: -$spacing-unit / 2;
+        margin-left: -$spacing-unit / 2;
+    }
+
+    @include media-query($content-width) {
+        margin-right: -$spacing-unit;
+        margin-left: -$spacing-unit;
+    }
+}
+
 figcaption {
     font-size: $small-font-size;
 }
