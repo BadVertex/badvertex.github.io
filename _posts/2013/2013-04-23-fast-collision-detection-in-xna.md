@@ -10,5 +10,5 @@ My solution parses the texture beforehand, generating either bounding lines or a
 I'll get around to posting both the math and the code (when I get it cleaned up), but for now: here is a preview of the working concept.
 
 <div class="videowrapper">
-    <iframe src="https://www.youtube.com/embed/wUt_IFA-Q3g" frameborder="0" allowfullscreen></iframe>
+    <iframe class="lazy" data-src="https://www.youtube.com/embed/wUt_IFA-Q3g" frameborder="0" allowfullscreen></iframe>
 </div>

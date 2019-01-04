@@ -27,13 +27,16 @@
     <button type="button" id="comment-preview-button">Preview</button>
 
     <div class="form-recaptcha g-recaptcha" data-sitekey="6LfZXT4UAAAAADYTgNOeU04CyzYdBWAocActdGMJ"></div>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
 
     <input id="submit-comment" class="cta" type="submit" value="Comment"/>
 </form>
 
-<script type="text/javascript" src="https://cdn.rawgit.com/showdownjs/showdown/1.8.6/dist/showdown.min.js"></script>
+<!-- <script type="text/javascript" src="https://cdn.rawgit.com/showdownjs/showdown/1.8.6/dist/showdown.min.js"></script> -->
 <script type="text/javascript">
+    script('https://www.google.com/recaptcha/api.js');
+    script('https://cdn.rawgit.com/showdownjs/showdown/1.8.6/dist/showdown.min.js');
+
     // Reply to
     function replyTo(id, author) {
         window.location.hash = "#new-comment";

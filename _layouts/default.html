@@ -1,10 +1,57 @@
 <!DOCTYPE html>
 <html>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+  
+        // Lazy load images
+        var lazyElements = [].slice.call(document.querySelectorAll("img.lazy, iframe.lazy"));
+        if ("IntersectionObserver" in window) {
+          let lazyObserver = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(function(entry) {
+              if (entry.isIntersecting) {
+                let lazyElement = entry.target;
+                lazyElement.src = lazyElement.dataset.src;
+                lazyElement.classList.remove("lazy");
+                lazyObserver.unobserve(lazyElement);
+              }
+            });
+          });
+  
+          lazyElements.forEach(function(lazyElement) {
+            lazyObserver.observe(lazyElement);
+          });
+        } else {
+          lazyElements.forEach(function(img) {
+              img.src = img.dataset.src;
+              img.classList.remove("lazy");
+          });
+        }
+      });
+  
+      function script(url) {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = url;
+        var x = document.getElementsByTagName('head')[0];
+        x.appendChild(s);
+      }
+
+      function stylesheet(url) {
+        var s = document.createElement('link');
+        s.rel = 'stylesheet';
+        s.href = url;
+        var x = document.getElementsByTagName('head')[0];
+        x.appendChild(s);
+      }
+  
+      </script>
+
 
   {% include head.html %}
 
   <body>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <script>stylesheet('https://fonts.googleapis.com/css?family=Open+Sans:400,700');</script>
 
     {% include header.html %}
 
@@ -16,7 +63,7 @@
 
     {% include footer.html %}
 
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script>script('https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML');</script>
   </body>
 
 </html>
