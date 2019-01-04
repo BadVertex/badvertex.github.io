@@ -6,6 +6,7 @@ p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
+    max-width: 100%;
 }
 
 
@@ -52,16 +53,20 @@ img {
 /**
  * Figures
  */
-.figure {
-    @include media-query($on-laptop) {
-        margin-right: -$spacing-unit / 2;
-        margin-left: -$spacing-unit / 2;
-    }
-
+ .figure img[width="100%"] {
     @include media-query($content-width) {
+        max-width: none;
         margin-right: -$spacing-unit;
         margin-left: -$spacing-unit;
+        width: calc(100% + #{$spacing-unit * 2});
     }
+
+    @include media-query($on-laptop) {
+        max-width: none;
+        margin-right: -$spacing-unit / 2;
+        margin-left: -$spacing-unit / 2;
+        width: calc(100% + #{$spacing-unit});
+    }        
 }
 
 figcaption {
@@ -174,10 +179,12 @@ pre {
     max-width: #{$content-width};
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    overflow-x: hidden;
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
+    box-sizing: border-box;
     @extend %clearfix;
 
     @include media-query($on-laptop) {

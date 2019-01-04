@@ -28,9 +28,10 @@
 .site-nav {
     float: right;
     line-height: 56px;
-
+    
     .menu-icon {
         display: none;
+        border: none;
     }
 
     .page-link {
@@ -44,12 +45,9 @@
     }
 
     @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
+        margin: 8px;
         right: $spacing-unit / 2;
         background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
         text-align: right;
 
         .menu-icon {
@@ -71,14 +69,16 @@
             }
         }
 
-        .trigger {
+        .nav-links {
             clear: both;
-            display: none;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.25s ease-out;
         }
 
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
+        &:hover .nav-links {
+            max-height: none;
+            transition: max-height 0.25s ease-in;
         }
 
         .page-link {
@@ -451,9 +451,8 @@
 
 #comment-preview-button {
     float: right;
-    display: inline-block;
     background: transparent;
-    box-shadow: 0;
+    box-shadow: none;
     border: 0;
     outline:none;
     cursor: pointer;
