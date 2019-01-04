@@ -8,8 +8,13 @@ exclude: true
     <h1 class="post-title">404 Page not found</h1>
   </header>
   <section class="entry">
-  	<p><b>It seems one of our code monkeys has ran away with this page.</b><br />Sorry about that, we will make sure to improve their training program.</p>
+    <p><b>It seems one of our code monkeys has run away with this page.</b>
+      <br />Sorry about that, we will make sure to improve their training program.</p>
+    <p>You could try searching or <a href="/">continue to the homepage</a>.</p>
 
-  	<p>Please <a href="/">continue to the homepage</a>.</p>
+    <form class="search-form left-align" action="{{ site.baseurl }}/search.html" method="get">
+      <label id="search-box-label" for="search-box">Search</label>
+      <input type="text" id="search-box" name="query">
+    </form>
   </section>
 </article>
