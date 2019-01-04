@@ -74,6 +74,7 @@
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.25s ease-out;
+            margin-bottom: 10px;
         }
 
         &:hover .nav-links {
@@ -83,12 +84,11 @@
 
         .page-link {
             display: block;
-            padding: 5px 10px;
+            margin-top: 10px;
 
             &:not(:last-child) {
                 margin-right: 0;
             }
-            margin-left: 20px;
         }
     }
 }
@@ -331,53 +331,53 @@
     }
 }
 
-#post-new-comment {
-    input, textarea {
-        &:focus {
-            border: 0;
-            border-bottom: 1px solid $brand-color;
-            outline: none !important;
-        }
 
-        padding-top: 5px;
-        padding-bottom: 5px;
-        margin-bottom: 10px;
+// Input fields
+input, textarea {
+    &:focus {
         border: 0;
-        border-bottom: 1px solid $grey-color-semilight;
-        background-color: transparent;
+        border-bottom: 1px solid $brand-color;
+        outline: none !important;
     }
 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border: 0;
+    border-bottom: 1px solid $grey-color-semilight;
+    background-color: transparent;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+    height: 100px;
+    min-height: 100px;
+    max-height: 300px;
+    line-height: 1.5em;
+}
+
+
+input[type=submit] {
+    background-color: $brand-color;
+    color: #fff;
+    padding: $spacing-unit / 2 $spacing-unit;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: $brand-color-dark;
+    }
+
+    &:disabled, &[disabled] {
+        background-color: darken($brand-color, 30%);
+    }
+}
+
+#post-new-comment {
     input[type=text], input[type=email], input[type=url] {
         min-width: 300px;
     }
-
-    textarea {
-        width: 100%;
-        resize: vertical;
-        height: 100px;
-        min-height: 100px;
-        max-height: 300px;
-        line-height: 1.5em;
-    }
-
-
-    input[type=submit] {
-        background-color: $brand-color;
-        color: #fff;
-        padding: $spacing-unit / 2 $spacing-unit;
-        border-radius: 4px;
-        cursor: pointer;
-        
-        &:hover {
-            background-color: $brand-color-dark;
-        }
-
-        &:disabled, &[disabled] {
-            background-color: darken($brand-color, 30%);
-        }
-    }
-
-    
 
     .form-recaptcha {
         margin-top: $spacing-unit / 2;
@@ -466,4 +466,24 @@
     margin-top: 5px;
     min-height: 100px;
     border-bottom: 1px solid $grey-color-semilight;
+}
+
+// Search form and page
+.search-form {
+    text-align: right;
+
+    label {
+        margin-right: 10px;
+    }
+}
+
+
+#search-results {
+    margin-top: $spacing-unit;
+    list-style: none;
+    margin: $spacing-unit 0;
+
+    h3 {
+        margin-bottom: 5px;
+    }
 }

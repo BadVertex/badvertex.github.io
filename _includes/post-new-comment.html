@@ -12,9 +12,9 @@
     <input type="hidden" name="options[reCaptcha][secret]" value="HtdxDI3BU/FXc5xgdzW+lXzorddgTXftDcYocvna6nM0kKPMuuaDMMhb/jKc/IP5wOTSv6guXYyTjUVbcQBm2crzIJRJOQ+6Wuv9IU1B7YW67tC8bci104HSYltXXJWgRkl+aw14dMTZpcOqnNVK9pc9iXJMohAKL6guVvG9QRs=">
 
     <input id="comment-parent" type="hidden" name="fields[_parent]" value="{{ post_slug }}">
-    <input class="form-field text-field" type="text" name="fields[name]" placeholder="Name" required/>
-    <input class="form-field text-field" type="email" name="fields[email]" placeholder="Email address (will not be public)" required/>
-    <input class="form-field text-field" type="url" name="fields[url]" placeholder="Website (optional)"/>
+    <input class="form-field text-field" type="text" name="fields[name]" placeholder="Name" required autocomplete='name'/>
+    <input class="form-field text-field" type="email" name="fields[email]" placeholder="Email address (will not be public)" required autocomplete='email'/>
+    <input class="form-field text-field" type="url" name="fields[url]" placeholder="Website (optional)" autocomplete='url'/>
 
     <textarea id="form-comment-input" class="form-field text-field" rows="10" name="fields[message]" placeholder="Comment. Markdown is accepted." required></textarea>
     <div id="comment-preview"></div>
@@ -27,12 +27,10 @@
     <button type="button" id="comment-preview-button">Preview</button>
 
     <div class="form-recaptcha g-recaptcha" data-sitekey="6LfZXT4UAAAAADYTgNOeU04CyzYdBWAocActdGMJ"></div>
-    <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
 
     <input id="submit-comment" class="cta" type="submit" value="Comment"/>
 </form>
 
-<!-- <script type="text/javascript" src="https://cdn.rawgit.com/showdownjs/showdown/1.8.6/dist/showdown.min.js"></script> -->
 <script type="text/javascript">
     script('https://www.google.com/recaptcha/api.js');
     script('https://cdn.rawgit.com/showdownjs/showdown/1.8.6/dist/showdown.min.js');
@@ -66,14 +64,14 @@
         return true;
     }
 
-    // Markdown preview
-    var converter = new showdown.Converter();
     var previewButton = document.getElementById('comment-preview-button');
     var textArea = document.getElementById('form-comment-input');
     var commentPreview = document.getElementById('comment-preview');
 
     previewButton.onclick = function() {
         if (textArea.style.display != "none") {
+            var converter = new showdown.Converter();
+
             commentPreview.innerHTML = converter.makeHtml(textArea.value);
             textArea.style.display = "none";
             commentPreview.style.display = "block";
