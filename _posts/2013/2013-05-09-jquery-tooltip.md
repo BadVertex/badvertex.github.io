@@ -58,9 +58,9 @@ $(document).ready(function() {
 });
 {% endhighlight %}
 
-<script type="text/javascript" src="/assets/posts/{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}/tooltip_js.js"></script>
+<script type="text/javascript" src="/assets/files/tooltip_js.js"></script>
 <script type="text/javascript">
 setupTooltips();
 </script>
-The full source code can be found here: <a href="/assets/posts/{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}/tooltip_js.js">tooltip_js.js</a>.
+The full source code can be found here: <a href="/assets/files/tooltip_js.js">tooltip_js.js</a>.
 As always: If you have any questions, please let me know!

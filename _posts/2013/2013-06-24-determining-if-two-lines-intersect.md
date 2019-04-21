@@ -5,7 +5,7 @@ author: Håvard Kindem
 ---
 Today we are going to take a look at intersecting lines. There are some information on this scattered around the internet, but a good example is hard to find. The uses for this is mainly in 2D, it can be applied to lighting, physics and all other applications using rays.
 
-{% include helpers/image.html name="lines.png" caption="Intersecting and non-intersecting lines" centered=true %}
+{% include helpers/image.html name="lines.png" caption="Intersecting and non-intersecting lines" align="center" %}
 
 To solve this, we want to convert our lines to the following form:
 $$ Ax + By = C $$
@@ -78,4 +78,4 @@ public static bool intersects(Line a, Line b)
 }
 {% endhighlight %}
 
-Source: [Line.cs](/assets/posts/{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}/Line.cs)
+Source: [Line.cs](/assets/files/Line.cs)

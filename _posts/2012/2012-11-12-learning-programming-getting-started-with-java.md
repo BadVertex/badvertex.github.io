@@ -12,20 +12,20 @@ Eclipse is an Integrated Development Kit (IDE), that means that we get a code ed
 
 So: go to the <a href="http://www.eclipse.org/downloads/">Eclipse website</a> to download Eclipse Classic and install it. Note: If you are downloading the .zip file, you only need to extract it to a folder and run it from there.
 
-{% include helpers/image.html name="eclipse_downloads.png" caption="Eclipse downloads list" centered=true %}
+{% include helpers/image.html name="eclipse_downloads.png" caption="Eclipse downloads list" align="center" %}
 
 <h2>Your first project</h2>
 Start by going to File, New, Java Project on the toolbar. Type in MyFirstProject as the project name. You might be asked to set your workspace directory, this is where your project will be saved to. For now, just press Finish and we are good to go.
 
-{% include helpers/image.html name="eclipse_new.png" caption="New project" centered=true %}
+{% include helpers/image.html name="eclipse_new.png" caption="New project" align="center" %}
 
 You can find your newly created project in the Package Explorer on the left. Open it and right click the src folder, select New, Class. Fill in MyClass as the name and check “public static void main” as marked in the picture below and press Finish.
 
-{% include helpers/image.html name="eclipse_newclass.png" caption="Create a class" centered=true %}
+{% include helpers/image.html name="eclipse_newclass.png" caption="Create a class" align="center" %}
 
 You will now see something like this:
 
-{% include helpers/image.html name="eclipse_window.png" caption="How it should look" centered=true width="80%" %}
+{% include helpers/image.html name="eclipse_window.png" caption="How it should look" align="center" %}
 
 <h2>Getting started on the code</h2>
  Before we continue, I’ll introduce some new terms and what they are.

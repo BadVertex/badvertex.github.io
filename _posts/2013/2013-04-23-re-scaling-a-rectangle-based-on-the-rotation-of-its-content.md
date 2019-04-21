@@ -6,8 +6,8 @@ author: Håvard Kindem
 As you might have noticed in the video in my earlier post, the bounding box of the sprite is scaling based on the rotation. This is useful as it ensures that even if the content is rotated, it is always within the bounds of the rectangle. To illustrate this, take a look at the following photos:
 
 <table style="border:0;margin:0 auto;"><tr>
-<td><img class="lazy" data-src="/assets/posts/{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}/Square.png" title="A 6 by 6 square without rotation" /></td>
-<td><img class="lazy" data-src="/assets/posts/{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}/SquareRotated.png" title="The same 6 by 6 square, but now rotated by 45 degrees" /></td>
+<td><img class="lazy" data-src="/assets/img/Square.png" title="A 6 by 6 square without rotation" /></td>
+<td><img class="lazy" data-src="/assets/img/SquareRotated.png" title="The same 6 by 6 square, but now rotated by 45 degrees" /></td>
 </tr></table><br />
 
 When we rotate the blue square, its bounds increases to the square in green. This is what we are trying to compensate for. The following formula gives us the delta x and y from the origin point.

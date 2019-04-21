@@ -3,7 +3,7 @@ layout: post
 title: Ascii Art Generator
 author: Håvard Kindem
 ---
-{% include helpers/image.html name="mario-ascii.png" width="100%" %}
+{% include helpers/image.html name="mario-ascii.png" align="full" %}
 
 Sun, beer, volleyball, travel, bathing, swimming, longboarding, and of course... programming!
 

@@ -53,7 +53,7 @@ img {
 /**
  * Figures
  */
- .figure img[width="100%"] {
+ .figure-align-full {
     @include media-query($content-width) {
         max-width: none;
         margin-right: -$spacing-unit;
@@ -69,13 +69,47 @@ img {
     }        
 }
 
+figure > img {
+    max-width: 100%;
+}
+
 figcaption {
     font-size: $small-font-size;
 }
 
-.figure-centered {
+.figure-center { // TODO: FIX!
     text-align: center;
 }
+
+
+.figure-align-center {
+    text-align: center;
+    width: 100%;
+}
+
+.figure-align-right {
+    float: right;
+    padding-left: $spacing-unit / 2;
+    width: 50%;
+}
+
+.figure-align-left {
+    float: left;
+    padding-right: $spacing-unit / 2;
+    width: 50%;
+}
+
+
+.figure-align-right, .figure-align-left {
+    @include media-query($on-laptop) {
+        float: none;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }        
+}
+
+
 
 
 /**
