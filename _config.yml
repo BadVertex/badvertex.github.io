@@ -1,7 +1,8 @@
 # Site settings
-title: badvertex
+title: BadVertex
+subtitle: Game Development, Programming and Technology
 email: badvertex@gmail.com
-description: Game Development, Programming and Technology
+description: Articles about game development, programming and technology. Learn to code games, applications and websites and get useful tips to improve your programming skills.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://badvertex.com" # the base hostname & protocol for your site
 #twitter_username: nexcius
