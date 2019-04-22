@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Six essential tips for digital nomads working remotely
+title: Six tips for digital nomads working remotely
 author: Håvard Kindem
 ---
 {% include helpers/image.html name="digital-nomad-header.jpg" align="full" %}
@@ -49,4 +49,6 @@ There are some different approaches to having more time outside of their job. So
 
 For me, what worked really well was to start the day early then take some time off during the middle of the day to go to the gym, beach, for a hike, etc. Doing these things with daylight gave me a lot more energy to finish the things I was working on earlier in the day.
 
-If you're a freelancer, consultant or working in-house; I can highly recommend living as a digital nomad, if only for a short time. With internet access being everywhere, more and more companies are opening up to the possibility of their employers doing this. Have a safe journey!
+If you're a freelancer, consultant or working in-house; I can highly recommend living as a digital nomad, if only for a short time. With internet access being everywhere, more and more companies are opening up to the possibility of their employers doing this. 
+
+What are your takeaways from working as a digital nomad? Please share your experiences in the comments below. Have a safe journey!
