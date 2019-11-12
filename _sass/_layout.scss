@@ -36,7 +36,8 @@
     }
 
     .page-link {
-        color: $text-color;
+        color: $header-color;
+	font-weight: bold;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the last one
